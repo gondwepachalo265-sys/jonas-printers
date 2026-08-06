@@ -1,0 +1,1 @@
+import{Q as e,Z as t}from"./index-BDsd4ynd.js";var n=e(t(),1),r=e=>{(0,n.useEffect)(()=>{let t=`Jonas Printers`;document.title=e?`${e} | ${t}`:t},[e])};export{r as t};
