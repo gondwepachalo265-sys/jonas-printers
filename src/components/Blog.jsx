@@ -7,11 +7,11 @@ const Blog = () => {
   const latestPosts = blogPosts.slice(0, 3);
 
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-white" id="blog">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <div className="inline-block bg-[#FFD700] text-[#1A3A8A] px-6 py-2 rounded-full font-bold text-sm mb-4">
-            📝 Latest Insights
+            Latest Insights
           </div>
           <h2 className="text-4xl md:text-5xl font-extrabold text-[#1A3A8A] mb-6">
             Our <span className="text-[#FFD700]">Blog</span>
@@ -23,8 +23,8 @@ const Blog = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {latestPosts.map((post) => (
-            <div 
-              key={post.id} 
+            <div
+              key={post.id}
               className="bg-gray-50 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden hover:scale-105 group"
             >
               <div className="p-6">
@@ -43,11 +43,11 @@ const Blog = () => {
                     <span className="text-xs text-gray-300">•</span>
                     <span className="text-xs text-gray-400">{post.readTime}</span>
                   </div>
-                  <Link 
+                  <Link
                     to={`/blog/${post.slug}`}
                     className="text-[#FFD700] font-bold hover:text-[#1A3A8A] transition-colors inline-flex items-center gap-1 group"
                   >
-                    Read More 
+                    Read More
                     <span className="inline-block transition-transform duration-300 group-hover:translate-x-1">→</span>
                   </Link>
                 </div>
@@ -58,7 +58,7 @@ const Blog = () => {
 
         {/* View All Blog Posts Button */}
         <div className="text-center mt-12">
-          <Link 
+          <Link
             to="/blog"
             className="bg-[#1A3A8A] text-white px-8 py-3 rounded-full font-bold hover:bg-[#FFD700] hover:text-[#1A3A8A] transition-all duration-300 shadow-lg hover:scale-105 inline-block"
           >
